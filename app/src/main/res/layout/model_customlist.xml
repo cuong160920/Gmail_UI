@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/oval_background"
+        android:backgroundTint="#1463FD"
+        android:paddingLeft="26dp"
+        android:paddingTop="10dp"
+        android:text="C"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_label_important_24"
+        android:layout_toRightOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/name"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label"
+        android:layout_toRightOf="@+id/label"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="1dp"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:text="Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/label"
+        android:layout_toLeftOf="@+id/check"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:34 PM"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"/>
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/time"
+        android:paddingTop="15dp"/>
+</RelativeLayout>
